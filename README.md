@@ -1,1 +1,113 @@
-# MDM-PRACTICAL-02
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-r from-gray-900 via-gray-700 to-gray-500 min-h-screen py-10">
+
+    <!-- Website Header -->
+    <header class="text-center text-white mb-8">
+        <h1 class="text-4xl font-bold">Student Profile</h1>
+        <p>Personal Portfolio</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-3xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden">
+
+          <!-- Profile Section -->
+        <section class="bg-blue-900 text-white text-center py-8">
+            <img src="C:\Users\Anisha Gupta\Downloads\WhatsApp Image 2026-07-21 at 7.45.58 PM.jpeg"
+                 alt="Profile Photo"
+                 class="w-36 h-36 rounded-full mx-auto border-4 border-white">
+
+            <h2 class="text-3xl font-bold mt-4">Achal Gupta</h2>
+            <p class="text-purple-100">Computer Science Engineering Student</p>
+        </section>
+
+        <!-- Personal Information -->
+        <section class="p-6 border-b">
+            <h2 class="text-2xl font-bold text-blue-900 mb-4">
+                Personal Information
+            </h2>
+
+            <div class="space-y-2">
+                <p><strong>Name:</strong> Achal Gupta</p>
+                <p><strong>Date of Birth:</strong> 16 March 2008</p>
+                <p><strong>Gender:</strong> Female</p>
+                <p><strong>City:</strong> Nagpur</p>
+                <p><strong>Nationality:</strong> Indian</p>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="p-6 bg-blue-50 border-b">
+            <h2 class="text-2xl font-bold text-blue-900 mb-4">
+                Education
+            </h2>
+
+            <table class="w-full border border-gray-300">
+                <tr class="bg-blue-200">
+                    <th class="border p-2">Qualification</th>
+                    <th class="border p-2">Institute</th>
+                    <th class="border p-2">Year</th>
+                </tr>
+
+                <tr>
+                    <td class="border p-2">B.Tech CSE</td>
+                    <td class="border p-2">SB Jain Institute of Technology</td>
+                    <td class="border p-2">2026</td>
+                </tr>
+
+                <tr>
+                    <td class="border p-2">HSC</td>
+                    <td class="border p-2">LK College</td>
+                    <td class="border p-2">2025</td>
+                </tr>
+
+                <tr>
+                    <td class="border p-2">SSC</td>
+                    <td class="border p-2">Mahatma Gandhi School</td>
+                    <td class="border p-2">2023</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Hobbies -->
+        <section class="p-6 border-b">
+            <h2 class="text-2xl font-bold text-blue-900 mb-4">
+                Hobbies
+            </h2>
+
+            <ul class="list-disc list-inside space-y-1">
+                <li>Programming</li>
+                <li>Reading Books</li>
+                <li>Playing Badminton</li>
+                <li>Listening to Music</li>
+            </ul>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="p-6 bg-blue-50">
+            <h2 class="text-2xl font-bold text-blue-900 mb-4">
+                Contact Information
+            </h2>
+
+            <p><strong>Email:</strong> aachal1603@50gmail.com</p>
+            <p><strong>Phone:</strong> +91 9876543210</p>
+            <p><strong>Address:</strong> Nagpur, Maharashtra, India</p>
+        </section>
+
+    </main>
+
+    <!-- Website Footer -->
+    <footer class="text-center text-white py-6">
+        © 2026 Student Profile | Designed using Tailwind CSS
+    </footer>
+
+</body>
+</html>
