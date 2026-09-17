@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achal Gupta
+        CS25005
+    </title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Playfair Display', serif ;
+        }
+    </style>
+</head>
+<body class="bg-blue-200 text-blue-500 antialiased min-h-screen flex flex-col selection:bg-emerald-500 selection:text-white">
+
+    <!-- Navigation Header -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-30 border-b border-slate-200/80 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo with Gradient Icon -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-red-400 via-red-700 to-red-900 flex items-center justify-center text-white shadow-md shadow-emerald-500/20 group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid fa-leaf text-xl"></i>
+                </div>
+                <div>
+                    <span class="font-extrabold text-2xl tracking-tight bg-gradient-to-r from-red-400 via-red-700 to-red-900 bg-clip-text text-transparent">
+                        Achal Gupta
+                    </span>
+                    <span class="block text-[10px] font-bold uppercase tracking-widest text-slate-600">CS25005</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 font-semibold text-sm text-slate-600">
+                <a href="#hero" class="hover:text-orange-600 transition-colors">Home</a>
+                <a href="#menu" class="text-red-900 font-bold">Food Menu</a>
+                <a href="#features" class="hover:text-orange-600 transition-colors">Why Choose Us</a>
+                <a href="#contact" class="hover:text-orange-600 transition-colors">Contact</a>
+            </nav>
+
+            <!-- Header Action Button with Gradient -->
+            <a href="#menu" class="px-6 py-2.5 rounded-full bg-gradient-to-r from-red-400 via-red-700 to-red-900 hover:from-emerald-600 hover:to-amber-600 text-white font-bold text-sm shadow-lg shadow-emerald-500/25 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">
+                Explore Menu
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative py-16 lg:py-24 bg-gradient-to-br from-orange-50 via-orange-50/50 to-orange-50 overflow-hidden">
+        <!-- Background Gradient Orbs -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-gradient-to-br from-orange-300/30 to-orange-400/20 blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-gradient-to-tr from-orange-300/30 to-orange-300/20 blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-orange-500/10 via-orange-500/10 to-orange-500/10 border border-blue-200 text-emerald-700 text-xs font-bold uppercase tracking-wider mb-4">
+                Fresh & Delicious Food
+            </span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-blue-900 tracking-tight leading-tight max-w-4xl mx-auto">
+                <span class="bg-gradient-to-r from-blue-900 via-blue-900 to-blue-900 bg-clip-text text-transparent"> THE ITALIAN TABLE</span>
+            </h1>
+            <p class="mt-4 text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+              Delicious meals prepared with fresh ingredients, aromatic spices, rich flavors, and authentic Indian & global cuisine.
+            </p>
+
+            <!-- Quick Filter Pill Highlights -->
+            <div class="mt-8 flex flex-wrap justify-center gap-3">
+                <span class="px-4 py-2 rounded-full bg-white border border-slate-200 shadow-sm text-xs font-semibold text-slate-700 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Fresh Ingredients
+                </span>
+                <span class="px-4 py-2 rounded-full bg-white border border-slate-200 shadow-sm text-xs font-semibold text-slate-700 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-teal-500"></span> Organic Superfoods
+                </span>
+                <span class="px-4 py-2 rounded-full bg-white border border-slate-200 shadow-sm text-xs font-semibold text-slate-700 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-amber-500"></span> Eco-Friendly Packaging
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN FOOD MENU SECTION (TAILWIND CSS GRID) -->
+    <section id="menu" class="py-16 lg:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Title with Gradient Accent -->
+        <div class="text-center mb-16">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                Our Popular Food Menu
+            </h2>
+            <div class="mt-3 w-24 h-1.5 bg-gradient-to-r from-orange-700 via-orange-400 to-orange-700 mx-auto rounded-full"></div>
+            <p class="mt-4 text-slate-500 text-sm max-w-lg mx-auto">
+                Discover our delicious dishes neatly arranged using responsive Tailwind CSS Grid.
+            </p>
+        </div>
+
+        <!-- TAILWIND CSS GRID CONTAINER -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- FOOD CARD 1 -->
+            <div class="bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between group">
+                <div>
+                    <!-- Image Container with Hover Zoom & Gradient Badge Overlay -->
+                    <div class="relative h-60 w-full overflow-hidden bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1777333033368-6bbb5d022a08?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d2hpdGUlMjBzYXVjZSUyMHBhc3RhfGVufDB8fDB8fHww" 
+                             alt="Red Sauce Pasta" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-40"></div>
+                        
+                        <!-- Category Badge -->
+                        <span class="absolute top-4 left-4 px-3.5 py-1 rounded-full text-xs font-bold text-white bg-gradient-to-r from-emerald-500 to-teal-500 shadow-md">
+                            Italian Special
+                        </span>
+                        
+                        <!-- Price Tag in Rupees -->
+                        <span class="absolute bottom-4 right-4 px-3.5 py-1.5 rounded-xl text-sm font-extrabold text-white bg-slate-900/80 backdrop-blur-md border border-white/20">
+                            ₹299
+                        </span>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="p-6">
+                        <div class="flex items-center gap-1.5 text-amber-500 text-xs font-bold mb-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <span class="text-slate-600 font-semibold ml-1">4.9 (150+ reviews)</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">
+                            REd sauce pasta
+                        </h3>
+                        <p class="mt-2 text-slate-600 text-xs leading-relaxed">
+                            Delicious pasta tossed in rich tomato and red sauce with herbs, garlic, and aromatic Italian spices.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Action Button with Gradient -->
+                <div class="px-6 pb-6 pt-2">
+                    <button class="w-full py-3 rounded-2xl bg-gradient-to-r from-orange-500 via-orange-500 to-orange-500 hover:from-emerald-600 hover:to-amber-600 text-white font-bold text-sm shadow-md shadow-stale-500/20 hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-cart-shopping"></i> Order Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- FOOD CARD 2 -->
+            <div class="bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between group">
+                <div>
+                    <!-- Image Container -->
+                    <div class="relative h-60 w-full overflow-hidden bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmlyeWFuaXxlbnwwfHwwfHx8MA%3D%3D" 
+                             alt="Creamy Truffle Mushroom Pasta" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-40"></div>
+                        
+                        <!-- Category Badge -->
+                        <span class="absolute top-4 left-4 px-3.5 py-1 rounded-full text-xs font-bold text-white bg-gradient-to-r from-orange-600 to-orange-600 shadow-md">
+                            Non-Veg
+                        </span>
+                        
+                        <!-- Price Tag in Rupees -->
+                        <span class="absolute bottom-4 right-4 px-3.5 py-1.5 rounded-xl text-sm font-extrabold text-white bg-slate-900/80 backdrop-blur-md border border-white/20">
+                            ₹349
+                        </span>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="p-6">
+                        <div class="flex items-center gap-1.5 text-amber-500 text-xs font-bold mb-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="text-slate-600 font-semibold ml-1">4.8 (110+ reviews)</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">
+                            Chicken Biryani
+                        </h3>
+                        <p class="mt-2 text-slate-600 text-xs leading-relaxed">
+                          Fragrant basmati rice cooked with tender chicken, aromatic spices, herbs, and flavorful biryani masala.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Action Button with Gradient -->
+                <div class="px-6 pb-6 pt-2">
+                    <button class="w-full py-3 rounded-2xl bg-gradient-to-r from-orange-500 via-grey-800 to-orange-500 hover:from-emerald-600 hover:to-amber-600 text-white font-bold text-sm shadow-md shadow-emerald-500/20 hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-cart-shopping"></i> Order Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- FOOD CARD 3 -->
+            <div class="bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between group">
+                <div>
+                    <!-- Image Container -->
+                    <div class="relative h-60 w-full overflow-hidden bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2xhc3NpYyUyMGJ1cmdlcnxlbnwwfHwwfHx8MA%3D%3D" 
+                             alt="Plant-Based Gourmet Smash Burger" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-40"></div>
+                        
+                        <!-- Category Badge -->
+                        <span class="absolute top-4 left-4 px-3.5 py-1 rounded-full text-xs font-bold text-white bg-gradient-to-r from-amber-500 to-orange-500 shadow-md">
+                            Best Seller
+                        </span>
+                        
+                        <!-- Price Tag in Rupees -->
+                        <span class="absolute bottom-4 right-4 px-3.5 py-1.5 rounded-xl text-sm font-extrabold text-white bg-slate-900/80 backdrop-blur-md border border-white/20">
+                            ₹329
+                        </span>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="p-6">
+                        <div class="flex items-center gap-1.5 text-amber-500 text-xs font-bold mb-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="text-slate-600 font-semibold ml-1">5.0 (230+ reviews)</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">
+                            Gourmet Veg Burger
+                        </h3>
+                        <p class="mt-2 text-slate-600 text-xs leading-relaxed">
+                           Juicy vegetable patty layered with fresh vegetables, cheese, flavorful sauce, and served in a toasted bun.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Action Button with Gradient -->
+                <div class="px-6 pb-6 pt-2">
+                    <button class="w-full py-3 rounded-2xl bg-gradient-to-r from-orange-500 via-orange-500 to-orange-500 hover:from-emerald-600 hover:to-amber-600 text-white font-bold text-sm shadow-md shadow-emerald-500/20 hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-cart-shopping"></i> Order Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- FOOD CARD 4 -->
+            <div class="bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between group">
+                <div>
+                    <!-- Image Container -->
+                    <div class="relative h-60 w-full overflow-hidden bg-slate-100">
+                        <img src="https://media.istockphoto.com/id/1208081969/photo/veg-manchurian-very-popular-chinese-snack-popular-in-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=5aZ4mkP4Y5DurU1shBkzgFe5y3qg3W38xbuCZyTs-r8=" 
+                             alt="Woodfired Vegan Margherita Pizza" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-40"></div>
+                        
+                        <!-- Category Badge -->
+                        <span class="absolute top-4 left-4 px-3.5 py-1 rounded-full text-xs font-bold text-white bg-gradient-to-r from-emerald-500 to-teal-500 shadow-md">
+                        Chinese Special
+                        </span>
+                        
+                        <!-- Price Tag in Rupees -->
+                        <span class="absolute bottom-4 right-4 px-3.5 py-1.5 rounded-xl text-sm font-extrabold text-white bg-slate-900/80 backdrop-blur-md border border-white/20">
+                            ₹289
+                        </span>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="p-6">
+                        <div class="flex items-center gap-1.5 text-amber-500 text-xs font-bold mb-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <span class="text-slate-600 font-semibold ml-1">4.7 (160+ reviews)</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">
+                            Veg Manchurian
+                        </h3>
+                        <p class="mt-2 text-slate-600 text-xs leading-relaxed">
+                            Crispy vegetable balls tossed in flavorful Indo-Chinese sauce with fresh vegetables and aromatic spices.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Action Button with Gradient -->
+                <div class="px-6 pb-6 pt-2">
+                    <button class="w-full py-3 rounded-2xl bg-gradient-to-r from-orange-500 via-orange-500 to-orange-500 hover:from-emerald-600 hover:to-amber-600 text-white font-bold text-sm shadow-md shadow-emerald-500/20 hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-cart-shopping"></i> Order Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- FOOD CARD 5 -->
+            <div class="bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between group">
+                <div>
+                    <!-- Image Container -->
+                    <div class="relative h-60 w-full overflow-hidden bg-slate-100">
+                        <img src="https://plus.unsplash.com/premium_photo-1739906393226-9978e7943b00?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Z3JpbGxlZCUyMGNoZWVzZSUyMHNhbmR3aWNofGVufDB8fDB8fHww" 
+                             alt="Jackfruit & Avocado Street Tacos" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-40"></div>
+                        
+                        <!-- Category Badge -->
+                        <span class="absolute top-4 left-4 px-3.5 py-1 rounded-full text-xs font-bold text-white bg-gradient-to-r from-rose-500 to-amber-500 shadow-md">
+                            Spicy Delight
+                        </span>
+                        
+                        <!-- Price Tag in Rupees -->
+                        <span class="absolute bottom-4 right-4 px-3.5 py-1.5 rounded-xl text-sm font-extrabold text-white bg-slate-900/80 backdrop-blur-md border border-white/20">
+                            ₹249
+                        </span>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="p-6">
+                        <div class="flex items-center gap-1.5 text-amber-500 text-xs font-bold mb-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="text-slate-600 font-semibold ml-1">4.8 (125+ reviews)</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">
+                          Grilled Cheese Sandwich
+                        </h3>
+                        <p class="mt-2 text-slate-600 text-xs leading-relaxed">
+                            Grilled sandwich filled with melted cheese, fresh vegetables, herbs, and delicious flavorful sauce.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Action Button with Gradient -->
+                <div class="px-6 pb-6 pt-2">
+                    <button class="w-full py-3 rounded-2xl bg-gradient-to-r from-orange-500 via-orange-500 to-orange-500 hover:from-emerald-600 hover:to-amber-600 text-white font-bold text-sm shadow-md shadow-emerald-500/20 hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-cart-shopping"></i> Order Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- FOOD CARD 6 -->
+            <div class="bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between group">
+                <div>
+                    <!-- Image Container -->
+                    <div class="relative h-60 w-full overflow-hidden bg-slate-100">
+                        <img src="https://media.istockphoto.com/id/467885320/photo/chocolate-fondant-lava-cake.webp?a=1&b=1&s=612x612&w=0&k=20&c=4LZpie_MiyLhUkU235uCHWxOt719mMatSXEduzetsFY=" 
+                             alt="Raw Berry Cheesecake" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-40"></div>
+                        
+                        <!-- Category Badge -->
+                        <span class="absolute top-4 left-4 px-3.5 py-1 rounded-full text-xs font-bold text-white bg-gradient-to-r from-purple-500 to-indigo-500 shadow-md">
+                            Dessert
+                        </span>
+                        
+                        <!-- Price Tag in Rupees -->
+                        <span class="absolute bottom-4 right-4 px-3.5 py-1.5 rounded-xl text-sm font-extrabold text-white bg-slate-900/80 backdrop-blur-md border border-white/20">
+                            ₹199
+                        </span>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="p-6">
+                        <div class="flex items-center gap-1.5 text-amber-500 text-xs font-bold mb-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="text-slate-600 font-semibold ml-1">4.9 (180+ reviews)</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">
+                            Chocolate Lava Cake
+                        </h3>
+                        <p class="mt-2 text-slate-600 text-xs leading-relaxed">
+                       Warm chocolate cake filled with rich melted chocolate, creating a delicious and indulgent dessert.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Action Button with Gradient -->
+                <div class="px-6 pb-6 pt-2">
+                    <button class="w-full py-3 rounded-2xl bg-gradient-to-r from-orange-500 via-orange-500 to-orange-500 hover:from-emerald-600 hover:to-amber-600 text-white font-bold text-sm shadow-md shadow-emerald-500/20 hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-cart-shopping"></i> Order Now
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+     <!-- Why Choose Us / Features Section -->
+    <section id="features" class="py-16 bg-gradient-to-br from-orange-500/5 via-orange-500/5 to-orange-500/5 border-y border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                
+                <div class="p-8 bg-white rounded-3xl border border-slate-200/60 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 mx-auto rounded-2xl bg-gradient-to-tr from-orange-400 to-orange-800 flex items-center justify-center text-white text-2xl shadow-md mb-4">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h4 class="font-bold text-lg text-slate-900">Fresh and Natural</h4>
+                    <p class="text-slate-500 text-xs mt-2 leading-relaxed">Made with fresh vegetable, herbs, and quality ingredients.</p>
+                </div>
+
+                <div class="p-8 bg-white rounded-3xl border border-slate-200/60 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 mx-auto rounded-2xl bg-gradient-to-tr from-orange-400 to-orange-800 flex items-center justify-center text-white text-2xl shadow-md mb-4">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h4 class="font-bold text-lg text-slate-900">Rich in Flavor</h4>
+                    <p class="text-slate-500 text-xs mt-2 leading-relaxed">A delicious blend of traditional Indian spices and authentic flavors.</p>
+                </div>
+
+                <div class="p-8 bg-white rounded-3xl border border-slate-200/60 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 mx-auto rounded-2xl bg-gradient-to-tr from-orange-400 to-orange-800 flex items-center justify-center text-white text-2xl shadow-md mb-4">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <h4 class="font-bold text-lg text-slate-900">Eco Friendly</h4>
+                    <p class="text-slate-500 text-xs mt-2 leading-relaxed">Packaged in 100% biodegradable, plastic-free compostable containers.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gradient-to-l from-gray-900 via-gray-900 to-gray-900 text-orange-600 py-10 mt-auto border-t border-orange-200">
+        <!-- Top Gradient Accent Line -->
+        <div class="h-1 w-full bg-gradient-to-r from-orange-700 via-orange-400 to-orange-700 -mt-10 mb-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-medium">
+            <!-- Brand copyright -->
+            <div class="flex items-center gap-2">
+                <div class="w-7 h-7 rounded-lg bg-gradient-to-tr from-red-400 to-red-900 flex items-center justify-center text-white text-xs font-bold">
+                    A
+                </div>
+                <span class="font-bold text-white ">Achal Gupta</span> &copy; 2026. All rights reserved.
+            </div>
+
+            <!-- Social Media Anchor Links -->
+            <div class="flex items-center gap-3">
+                <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-gradient-to-tr hover:from-pink-500 hover:to-blue-500 hover:text-white flex items-center justify-center text-slate-600 transition-all duration-300">
+                    <i class="fa-brands fa-instagram text-sm"></i>
+                </a>
+                <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-gradient-to-tr hover:from-pink-500 hover:to-purple-500 hover:text-white flex items-center justify-center text-slate-600 transition-all duration-300">
+                    <i class="fa-brands fa-facebook-f text-sm"></i>
+                </a>
+                <a href="#" aria-label="Telegram" class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-gradient-to-tr hover:from-teal-500 hover:to-purple-500 hover:text-white flex items-center justify-center text-slate-600 transition-all duration-300">
+                    <i class="fab fa-telegram text-sm"></i>
+                </a>
+                <a href="#" aria-label="WhatsApp" class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-gradient-to-tr hover:from-pink-500 hover:to-blue-600 hover:text-white flex items-center justify-center text-slate-600 transition-all duration-300">
+                    <i class="fa-brands fa-whatsapp text-sm"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
